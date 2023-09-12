@@ -41,9 +41,6 @@ kind: Service
 metadata:
   name: jupyter-headless
 spec: 
-  type:  {{ .Values.hub.service.type }}
-  {{- with .Values.hub.service.loadBalancerIP }}
-  loadBalancerIP: {{ . }}
-  {{- end }}
+  clusterIP: None
   selector:
     component: singleuser-server
