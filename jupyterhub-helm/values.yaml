@@ -35,12 +35,8 @@ hub:
   config:
     Authenticator:
       admin_users:
-        - apinchuk
-        - jhub
       allowed_users:
-        - jupyteruser
     DummyAuthenticator:
-      password: Aws975Jupyter!
     JupyterHub:
       admin_access: true
       authenticator_class: dummy
