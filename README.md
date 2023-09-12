@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JupyterHub Helm chart
 
 [![Documentation](https://img.shields.io/badge/Documentation-z2jh.jupyter.org-blue?logo=read-the-docs&logoColor=white)](https://z2jh.jupyter.org)
@@ -16,3 +17,6 @@ The JupyterHub Helm chart is accompanied with an installation guide at [z2jh.jup
 Much of the initial groundwork for this documentation is information learned from the successful use of JupyterHub and Kubernetes at UC Berkeley in their [Data 8](http://data8.org/) program.
 
 ![](https://raw.githubusercontent.com/jupyterhub/zero-to-jupyterhub-k8s/HEAD/docs/source/_static/images/data8_massive_audience.jpg)
+=======
+# jupyterhub
+>>>>>>> 98910d062f03248c27d18e55c4a4138abc1e0f5a
