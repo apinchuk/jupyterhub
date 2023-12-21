@@ -148,7 +148,7 @@ hub:
   existingSecret:
   serviceAccount:
     create: true
-    name:
+    name: jupyterhub
     annotations: {}
   extraPodSpec: {}
 
@@ -385,7 +385,7 @@ singleuser:
   allowPrivilegeEscalation: false
   uid: 1000
   fsGid: 100
-  serviceAccountName:
+  serviceAccountName: jupyterhub
   storage:
     type: dynamic
     extraLabels: {}
