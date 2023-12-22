@@ -5,15 +5,15 @@ entries:
       artifacthub.io/images: |
         - image: jupyterhub/configurable-http-proxy:4.5.6
           name: configurable-http-proxy
-        - image: jupyterhub/k8s-hub:3.0.3
+        - image: jupyterhub/k8s-hub:3.2.1
           name: k8s-hub
-        - image: jupyterhub/k8s-image-awaiter:3.0.3
+        - image: jupyterhub/k8s-image-awaiter:3.2.1
           name: k8s-image-awaiter
-        - image: jupyterhub/k8s-network-tools:3.0.3
+        - image: jupyterhub/k8s-network-tools:3.2.1
           name: k8s-network-tools
-        - image: jupyterhub/k8s-secret-sync:3.0.3
+        - image: jupyterhub/k8s-secret-sync:3.2.1
           name: k8s-secret-sync
-        - image: jupyterhub/k8s-singleuser-sample:3.0.3
+        - image: jupyterhub/k8s-singleuser-sample:3.2.1
           name: k8s-singleuser-sample
         - image: registry.k8s.io/kube-scheduler:v1.26.8
           name: kube-scheduler
@@ -44,6 +44,6 @@ entries:
     sources:
     - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
     urls:
-    - https://apinchuk.github.io/jupyterhub/jupyterhub-3.0.3.tgz
-    version: 3.0.3
+    - https://apinchuk.github.io/jupyterhub/jupyterhub-3.2.1.tgz
+    version: 3.2.1
 generated: "2023-09-12T11:18:10.300528969-07:00"

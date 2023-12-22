@@ -35,12 +35,3 @@ spec:
     {{- with .Values.hub.service.extraPorts }}
     {{- . | toYaml | nindent 4 }}
     {{- end }}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: jupyter-headless
-spec: 
-  clusterIP: None
-  selector:
-    component: singleuser-server
