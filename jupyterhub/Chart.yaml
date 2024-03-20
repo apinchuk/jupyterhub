@@ -1,9 +1,9 @@
 apiVersion: v2
 appVersion: 4.0.2
 description: Multi-user Jupyter installation
+icon: https://hub.jupyter.org/helm-chart/images/hublogo.svg
 keywords:
 - jupyter
 - jupyterhub
 name: jupyterhub
 version: 3.2.1
-icon: https://hub.jupyter.org/helm-chart/images/hublogo.svg
