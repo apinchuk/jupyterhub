@@ -76,7 +76,8 @@ hub:
   annotations: {}
   command: []
   args: []
-  extraConfig: {}
+  extraConfig:
+    sparkNamespace:
   extraFiles: {}
   extraEnv: {}
   extraContainers: []
