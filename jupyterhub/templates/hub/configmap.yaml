@@ -28,3 +28,18 @@ data:
     can compare and decide if it should run or not using the `lookup` function.
   */}}
   checksum_hook-image-puller: {{ include "jupyterhub.imagePuller.daemonset.hook.checksum" . | quote }}
+---
+{{ if .Values.hub.extraConfig.sparknamespace }}
+{{- $sparkConfig := (lookup "v1" "ConfigMap" .Values.hub.extraConfig.sparknamespace "spark-defaults") }}
+{{- $hiveSite := get $sparkConfig.data "hive-site.xml" }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spark-defaults
+  labels:
+    {{- include "jupyterhub.labels" . | nindent 4 }}
+data:
+  spark-defaults1.conf: |
+    test2= {{ $sparkConfig.kind }}
+    test3= {{ $hiveSite }}
+{{- end }}
